@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	padding: 100px;
 }
 ol, ul {
 	list-style: none;
@@ -49,26 +50,66 @@ table {
 
 .character {
 
+width: 100px;
+
+height: 100px;
+
+vertical-align: bottom;
+
+margin: 25px;
+
+background: white;
+
+display: inline-block;
+
+mix-blend-mode: multiply;
+}
+
+.median {
+
+}
+
+.ascender {margin-top: 50px;}
+
+.descender {
 }
 
 .letter-a {
   position: relative;
+  border-radius: 100%;
+  box-sizing: content-box;
+  border: 25px solid blue;
+  width: 50px;
+  height: 50px;
 }
 
 .letter-a:before {
   content: " ";
+  mix-blend-mode: inherit;
 }
 
 .letter-a:after {
   content: " ";
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  height: 100px;
+  width: 25px;
+  mix-blend-mode: inherit;
+  background: red;
 }
 
-.letter-b {
-  position: relative;
-}
+.letter-b {position: relative;border-radius: 100%;box-sizing: content-box;border: 25px solid blue;width: 50px;height: 50px;}
 
 .letter-b:before {
   content: " ";
+  position: absolute;
+  left: -25px;
+  bottom: -25px;
+  height: 150px;
+  width: 25px;
+  mix-blend-mode: inherit;
+  background: red;
 }
 
 .letter-b:after {
@@ -77,14 +118,20 @@ table {
 
 .letter-c {
   position: relative;
+  border-radius: 100%;
+  box-sizing: content-box;
+  border: 25px solid blue;
+  border-right: 25px solid transparent;
+  width: 50px;
+  height: 50px;
 }
 
 .letter-c:before {
   content: " ";
+  mix-blend-mode: inherit;
 }
 
 .letter-c:after {
-  content: " ";
 }
 
 .letter-d {
@@ -97,4 +144,34 @@ table {
 
 .letter-d:after {
   content: " ";
+}
+
+.letter-g {
+  position: relative;
+  border-radius: 100%;
+  box-sizing: content-box;
+  border: 25px solid blue;
+  width: 50px;
+  height: 50px;
+}
+
+.letter-g:before {
+  content: " ";
+}
+
+.letter-g:after {
+  content: " ";
+  =: 50px
+  height: 50px;
+  border-radius: 100%;
+  box-sizing: content-box;
+  border: 25px solid red;
+  border-top-right-radius: 0;
+  border-left: 25px solid transparent;
+  border-top: none;
+  width: 50px;
+  top: 25px;
+  height: 75px;
+  position: absolute;
+  mix-blend-mode: inherit;
 }
