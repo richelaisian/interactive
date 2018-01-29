@@ -59,19 +59,17 @@ table {
 
 .character {
 
-width: 200px;
+width: 50px;
 
-height: 200px;
+height: 50px;
 
 vertical-align: bottom;
 
 margin: 0px 25px;
 
-border: 25px solid blue;
+border: 25px solid black;
 
 border-radius: 100%;
-
-margin-bottom: 0;
 
 background: white;
 
@@ -91,36 +89,49 @@ position: relative;
 .descender {
 }
 
-.letter-a {
-}
+.letter-a {/* margin-bottom: 50px; */}
 
 .letter-a:before {
   content: " ";
+  position: absolute;
+  right: -50px;
+  top: -25px;
+  width: 25px;
+  height: 0px;
+  /* border-left: 25px black solid; */
+  /* border-bottom-left-radius: 100px; */
+  border-bottom: 25px black solid;
   mix-blend-mode: inherit;
+  display: none;
 }
 
 .letter-a:after {
   content: " ";
   position: absolute;
-  right: -25px;
+  right: -50px;
   bottom: -25px;
-  height: 250px;
   width: 25px;
+  height: 28px;
+  border-left: 25px black solid;
+  /* border-bottom-left-radius: 100px; */
+  border-bottom: 25px black solid;
   mix-blend-mode: inherit;
-  background: red;
+  /* background: black; */
 }
 
-.letter-b {}
+.letter-b {
+}
 
 .letter-b:before {
   content: " ";
   position: absolute;
-  left: -25px;
+  left: -50px;
   bottom: -25px;
-  height: 375px;
+  height: 150px;
   width: 25px;
   mix-blend-mode: inherit;
-  background: red;
+  border-top: 25px solid black;
+  border-right: 25px solid black;
 }
 
 .letter-b:after {
@@ -134,8 +145,14 @@ position: relative;
 }
 
 .letter-c:before {
-  content: " ";
+  /* content: " "; */
   mix-blend-mode: inherit;
+  width: 25px;
+  height: 25px;
+  background: black;
+  position: absolute;
+  top: -25px;
+  left: -50px;
 }
 
 .letter-c:after {
@@ -153,23 +170,24 @@ position: relative;
 	position: absolute;
 	right: -25px;
 	bottom: -25px;
-	height: 375px;
-	width: 25px;
+	height: 150px;
 	mix-blend-mode: inherit;
-	background: red;
+	border-right: solid 25px black;
+	width: 25px;
+	border-top: solid 25px black;
 }
 
 .letter-e {
-    border: 25px solid transparent;
-    border-bottom: 25px solid blue;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid black;
 }
 
 .letter-e:before {
   content: " ";
   position: absolute;
-  border: solid 25px blue;
-  width: 200px;
-  height: 200px;
+  border: solid 25px black;
+  width: 50px;
+  height: 50px;
   left: -25px;
   border-radius: 100%;
   transform: rotate(45deg);
@@ -180,13 +198,16 @@ position: relative;
 .letter-e:after {
   content: " ";
   position: absolute;
-  height: 25px;
-  width: 246px;
-  background: red;
+  height: 18px;
+  background: white;
+  width: 60px;
   mix-blend-mode: inherit;
   right: -48px;
-  margin-right: 25px;
-  top: 75px;
+  margin-right: 23px;
+  top: -25px;
+  border: solid 20px black;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
 }
 
 .letter-f {
@@ -214,7 +235,7 @@ margin-right: 0px;
 	content: " ";
 	width: 200px;
 	height: 25px;
-	background: red;
+	background: black;
 	position: absolute;
 	mix-blend-mode: inherit;
 	top: 125px;
@@ -236,7 +257,7 @@ margin-right: 0px;
   height: 200px;
   position: absolute;
   right: -25px;
-  border: solid 25px red;
+  border: solid 25px black;
   border-top: solid 25px transparent;
   transform: rotate(45deg);
   border-left: solid 25px transparent;
@@ -250,7 +271,7 @@ margin-right: 0px;
   height: 50px;
   border-radius: 100px;
   box-sizing: content-box;
-  border: 25px solid red;
+  border: 25px solid black;
   border-top-right-radius: 0;
   border-left: 25px solid transparent;
   border-top: none;
