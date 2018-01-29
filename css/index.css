@@ -1,0 +1,21 @@
+body {
+}
+
+.webring {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  background: white;
+}
+
+#content-wrap {
+
+}
+
+#content-wrap>div {
+}
+
+hr {
+  width: 500px;
+  margin: 2em 0;
+}
