@@ -1,0 +1,79 @@
+body {
+    font-family: 'Crimson Text', serif;
+    font-size: 25px;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: helvetica, sans-serif;
+    letter-spacing: -1px;
+}
+
+figure {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+b {
+  font-family: helvetica, sans-serif;
+}
+
+hr {
+  margin: 50px 0px;
+  border-color: black;
+}
+
+#container img {
+  margin-left: -30vw;
+  width: 100vw;
+  position: relative;
+  z-index: 100;
+}
+
+#header {
+  padding: 50px;
+  margin: 0;
+  background: white;
+  width: 350px;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+#header > h1 {
+  margin: 0;
+}
+
+#contents h2{
+  margin-top: 0;
+
+}
+
+#container {
+  margin: 0px 30%;
+  margin-bottom: 50px;
+  left: 0;
+}
+
+#contents {
+
+position: fixed;
+
+left: 50px;
+
+top: 50px;
+}
+
+.section {
+
+}
+
+.highlight {
+  background: palegreen;
+}
