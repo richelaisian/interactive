@@ -47,13 +47,6 @@ hr {
   background: white;
 }
 
-#prelude {
-}
-
-#prelude * {
-  width: 100%;
-}
-
 #header > h1 {
   margin: 0;
 }
