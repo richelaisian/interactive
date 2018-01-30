@@ -30,31 +30,33 @@ hr {
 }
 
 #container img {
-  margin-left: -450px;
+  margin-left: -30vw;
   width: 100vw;
   position: relative;
   z-index: 100;
 }
 
 #header {
-  margin: 0 auto;
+  padding: 50px;
+  margin: 0;
+  background: white;
   width: 350px;
-  left: 50px;
-  top: 50px;
-  position: fixed;
+  top: 0;
+  left: 0;
+  position: relative;
 }
 
 #header > h1 {
   margin: 0;
 }
 
-#contents {
+#contents h2{
+  margin-top: 0;
 
 }
 
 #container {
-  margin: 239px 50px 0px 450px;
-  max-width: 50%;
+  margin: 0px 30%;
   margin-bottom: 50px;
   left: 0;
 }
@@ -64,6 +66,8 @@ hr {
 position: fixed;
 
 left: 50px;
+
+top: 50px;
 }
 
 .section {
