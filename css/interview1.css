@@ -1,13 +1,15 @@
 body {
-    font-family: 'Crimson Text', serif;
-    font-size: 25px;
-    overflow-x: hidden;
-    margin: 0;
+  overflow-x: hidden;
+  margin: 0;
+  font-size: 25px;
+  font-family: 'Crimson Text', serif;
 }
 
-h1, h2, h3 {
-    font-family: helvetica, sans-serif;
-    letter-spacing: -1px;
+h1,
+h2,
+h3 {
+  letter-spacing: -1px;
+  font-family: helvetica, sans-serif;
 }
 
 figure {
@@ -15,9 +17,9 @@ figure {
 }
 
 ul {
+  padding: 0;
   list-style: none;
   text-align: left;
-  padding: 0;
 }
 
 b {
@@ -25,54 +27,55 @@ b {
 }
 
 hr {
-  margin: 50px 0px;
+  margin: 50px 0;
   border-color: black;
 }
 
-#container img {
-  margin-left: -30vw;
-  width: 100vw;
+#splash {
   position: relative;
   z-index: 100;
+  width: 100vw;
 }
 
 #header {
-  padding: 50px;
-  margin: 0;
-  background: white;
-  width: 350px;
+  position: relative;
   top: 0;
   left: 0;
-  position: relative;
+  margin: 0;
+  padding: 50px;
+  width: 350px;
+  background: white;
+}
+
+#prelude {
+}
+
+#prelude * {
+  width: 100%;
 }
 
 #header > h1 {
   margin: 0;
 }
 
-#contents h2{
+#contents h2 {
   margin-top: 0;
-
 }
 
 #container {
-  margin: 0px 30%;
-  margin-bottom: 50px;
   left: 0;
+  margin: auto auto 50px;
+  padding: 0 250px 50px;
+  max-width: 800px;
 }
 
 #contents {
-
-position: fixed;
-
-left: 50px;
-
-top: 50px;
+  position: fixed;
+  top: 50px;
+  left: 50px;
 }
 
-.section {
-
-}
+.section {}
 
 .highlight {
   background: palegreen;
