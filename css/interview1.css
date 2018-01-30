@@ -1,4 +1,74 @@
+body {
+    font-family: serif;
+    font-size: 25px;
+    overflow-x: hidden;
+    margin: 0;
+}
 
-    body {
-      background: yellow;
-    }
+h1, h2, h3 {
+    font-family: sans-serif;
+}
+
+figure {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+b {
+  font-family: helvetica, sans-serif;
+}
+
+hr {
+  margin: 50px 0px;
+  border-color: black;
+}
+
+#container img {
+  margin-left: -506px;
+  width: 100vw;
+  position: relative;
+  z-index: 100;
+}
+
+#header {
+  margin: 0 auto;
+  width: 350px;
+  left: 50px;
+  top: 50px;
+  position: fixed;
+}
+
+#header > h1 {
+  margin: 0;
+}
+
+#contents {
+
+}
+
+#container {
+  margin: 239px 50px 0px 506px;
+  max-width: 50%;
+  margin-bottom: 50px;
+  left: 0;
+}
+
+#contents {
+
+position: fixed;
+
+left: 50px;
+}
+
+.section {
+
+}
+
+.highlight {
+  background: palegreen;
+}
