@@ -1,12 +1,13 @@
 body {
-    font-family: serif;
+    font-family: 'Crimson Text', serif;
     font-size: 25px;
     overflow-x: hidden;
     margin: 0;
 }
 
 h1, h2, h3 {
-    font-family: sans-serif;
+    font-family: helvetica, sans-serif;
+    letter-spacing: -1px;
 }
 
 figure {
@@ -29,7 +30,7 @@ hr {
 }
 
 #container img {
-  margin-left: -506px;
+  margin-left: -450px;
   width: 100vw;
   position: relative;
   z-index: 100;
@@ -52,7 +53,7 @@ hr {
 }
 
 #container {
-  margin: 239px 50px 0px 506px;
+  margin: 239px 50px 0px 450px;
   max-width: 50%;
   margin-bottom: 50px;
   left: 0;
