@@ -106,7 +106,7 @@ width: 100%;
 #content-wrap {padding-top: 100px;margin-left: 100px;margin-right: 310px;}
 
 #content-wrap>div {
-  margin: 0px 1.25rem 3.75rem 1.25rem;
+  margin: 0px 2.5rem 3.75rem 0px;
   border: solid 1px;
 }
 
