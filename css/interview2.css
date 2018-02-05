@@ -1,4 +1,197 @@
+figure {
+  margin: 0px;
+}
 
 body {
-  background: lime;
+  background: #f5f5f5;
+  font-family: 'EB Garamond', serif;
+  margin: 0;
+  font-size: 15px;
+}
+
+hr {
+  color: gainsboro;
+}
+
+
+
+a:link, a:visited {
+  color: inherit;
+
+  transition: color .3s,border-bottom-color .3s;
+}
+
+
+a:hover, a:active {
+color: #6a6868;
+border-bottom-color: #6a6868;
+}
+
+h2 {
+  font-size: 100%;
+  text-transform: uppercase;
+}
+
+img {
+  filter: grayscale(100);
+  margin-bottom: 2em;
+}
+
+nav {
+  border-bottom: solid 1px #ff470f;
+  padding: 20px 0;
+  color: #0a0505;
+}
+
+nav * {
+  margin: 0px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 37px;
+}
+
+nav li:first-child {
+  margin: 0 35px;
+  position: absolute;
+  color: #ff470f;
+  width: 100px;
+  height: 37px;
+  top: 15px;
+  left: 0;
+}
+
+#title {
+  font-size: 140%;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.1;
+  margin-bottom: 2.5em;
+}
+
+#name {
+  font-size: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 1em;
+}
+
+nav li:nth-child(2) {
+  margin-left: 180px;
+}
+
+nav li {
+  margin-right: 15px;
+}
+
+nav a {
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color .3s,border-bottom-color .3s;
+}
+
+#wrap {
+
+width: 1000px;
+
+margin: 68px auto;
+
+font-size: 22px;
+
+line-height: 1.4;
+
+position: relative;
+}
+
+#sub-wrap {
+  width: 66.6666%;
+  padding: 0px 15px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+#slash {
+  transform: rotate(40deg);
+  font-size: 201%;
+  position: absolute;
+  width: 1px;
+  height: 50px;
+  margin-left: -2px;
+  transform-origin: center;
+  background: #ff470f;
+  left: 50%;
+}
+
+#cont {display: inline-block;position: absolute;top: -10px;left: -5px;}
+
+#tents {
+
+position: absolute;
+
+right: -2px;
+
+bottom: -15px;
+}
+
+.section-title {
+
+text-transform: lowercase;
+
+color: #6a6868;
+
+background: #f5f5f5;
+
+width: 16.6665%;
+
+position: absolute;
+
+margin-top: 0;
+
+line-height: 1;
+
+left: 0;
+
+text-align: left;
+
+font-size: 125%;
+}
+
+.highlight {
+  background: gainsboro;
+}
+
+ul {
+  color: #0a0505;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+}
+
+li a {
+  text-transform: uppercase;
+  color: #0a0505;
+  text-decoration:none;
+}
+
+#link-back {
+
+width: 100%;
+
+text-align: center;
+
+font-size: 150%;
+
+color: #0a0505;
+}
+
+#link-back a {
+  text-decoration: none;
+  text-transform: uppercase;
 }
