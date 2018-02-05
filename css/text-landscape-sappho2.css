@@ -1,0 +1,98 @@
+body {
+  font-family: 'Anonymous Pro', monospace;
+  overflow: hidden;
+  font-family: 'EB Garamond', serif;
+  overflow-x: hidden;
+  font-size: 25px;
+  line-height: 40px;
+  margin: 0;
+  letter-spacing: .5px;
+}
+
+nav {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  z-index: 100;
+}
+
+nav * {
+  color: black;
+  transition: .2s ease-out;
+}
+
+nav *:first-child {
+  line-height: 1;
+  margin-bottom: 1em;
+}
+
+h1 {}
+
+nav a:hover {
+  color: red;
+}
+
+nav a:focus {
+  color: red;
+}
+
+.poem-wrap {
+  position: relative;
+  padding-top: 250px;
+}
+
+.main {
+  max-width: 300px;
+  margin: 0 auto 50vh;
+  padding-left: 50px;
+  top: 0;
+  position: relative;
+}
+
+.inserts-wrapper {
+  position: absolute;
+  left: calc(50vw - 529px);
+  top: 250px;
+  background: white;
+  padding-top: 0;
+  width: 400px;
+  margin-bottom: calc(100vh - 650px);
+}
+
+#v1 {}
+
+#v2 {}
+
+#v3 {}
+
+.insert {
+  color: red;
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  text-align: right;
+  vertical-align: top;
+}
+
+.insert span {
+  position: absolute;
+  right: 0;
+}
+
+.indent {
+  margin-right: -38px;
+}
+
+input {
+  text-align: right;
+  font-family: inherit;
+  font-size: inherit;
+  height: 24px;
+  border: none;
+  border-bottom: black solid 1px;
+}
+
+input:focus {
+  outline-style: none;
+  border-bottom: solid 1px red;
+}
