@@ -1,21 +1,98 @@
-body {
+body {font-family: monospace;margin: 0;font-size: 20px;
+background: whitesmoke;}
+
+nav {padding-bottom: 1rem;margin-bottom: 5rem;display: inline-block;border-bottom: dashed 1px;}
+
+nav * {
+  vertical-align: top;
 }
+
+nav h1 {
+ font-size: 300%;
+ margin: 0;
+ display: inline-block;
+}
+
+h1, h2 {
+  font-family: helvetica;
+}
+
+h2 {
+  margin: 2rem 0 1rem 0;
+  padding-bottom: 1rem;
+  font-size: 337.5%;
+}
+
+h2 span {
+  display: inline-block;
+  letter-spacing: 4px;
+  transform: rotate(-30deg);
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+a:link:after, a:visited:after {
+  content: "↝";
+}
+
+
+a:hover:after, a:active:after {
+  content: "↝";
+}
+
+a:hover, a:active {
+  background: pink;
+  text-decoration: none;
+}
+
 
 .webring {
   position: fixed;
-  top: 1em;
-  right: 1em;
-  background: white;
+  top: 1rem;
+  right: 1rem;
 }
 
-#content-wrap {
+.webring a {
 
+height: 100%;
+
+display: inline-block;
+
+width: 100%;
+}
+
+
+.webring a:link:after, .webring a:visited:after {
+  content: none;
+  background: none;
+}
+
+.webring a:hover:after, .webring a:active:after {
+  content: none;
+  background: none;
+}
+
+
+.webring a:hover, .webring a:active {
+}
+
+#content-wrap {max-width: 800px;padding-top: 100px;margin-left: 100px;}
+
+#content-wrap>div {
+  margin-bottom: 5rem;
 }
 
 #content-wrap>div {
 }
 
 hr {
-  width: 500px;
   margin: 2em 0;
+}
+
+li {
+  list-style: none;
 }
