@@ -76,17 +76,10 @@ a:hover, a:active {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  font-size: 20px;
+  font-size: 15px;
 }
 
-.webring a {
-
-height: 100%;
-
-display: inline-block;
-
-width: 100%;
-}
+.webring a {height: 100%;display: inline-block;width: 100%;padding: .25em 0;}
 
 
 .webring a:link:after, .webring a:visited:after {
