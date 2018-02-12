@@ -99,10 +99,13 @@ animation-delay: .5s;
     font-size: 20px;
     height: 31em;
     margin-top: 12em;
-    z-index: -10;
 }
 
 #sun {
+
+display: block;
+
+z-index: 1000;
 
 width: 4em;
 
@@ -287,7 +290,7 @@ animation-fill-mode: forwards;
 
 
 #basement3:before {
-	content: "❆ still super cold";
+	content: "❆ still extremely cold";
 	opacity: 0;
 	animation: fadein .3s ease-out;
 	animation-delay: 2s;
