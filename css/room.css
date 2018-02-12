@@ -1,0 +1,307 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-size: 30px;
+	font-family: sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a:link, a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: inherit;
+	text-decoration: none;
+
+}
+
+header, p {position: absolute;z-index: 100;top: -10em;font-size: 150%;left: 0;background: white;left: 25%;width: 50%;text-align: center;margin: 5rem auto;padding: 25px;border: solid 3px black;box-shadow: 10px 10px 0px black;animation: slidein .5s ease-out;animation-fill-mode: forwards;}
+
+p {
+	text-align: left;
+}
+#text1 {
+
+width: 25%;
+
+left: 2.5em;
+}
+
+#text2 {
+
+width: 25%;
+
+right: 2.5em;
+
+left: auto;
+
+margin: 5rem 0;
+
+animation-delay: .5s;
+}
+
+
+@keyframes slidein {
+	to {top: 0;}
+}
+
+#house {
+    width: 20em;
+    position: relative;
+    margin: 0 auto 0;
+    border: 0;
+    padding: 25px;
+    font-size: 20px;
+    height: 31em;
+    margin-top: 12em;
+    z-index: -10;
+}
+
+#sun {
+
+width: 4em;
+
+height: 4em;
+
+border: dotted .125em black;
+
+border-radius: 100%;
+}
+
+#sun a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-right: 10em solid transparent;
+	border-bottom: 7.5em solid black;
+	border-left: 10em solid transparent;
+}
+
+.square {
+	width: 2em;
+	height: 2em;
+	background: white;
+	border: solid .125em black;
+}
+
+.floor {
+    height: 8.75em;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    background: black;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.room {
+
+}
+
+.step {height: 1em;background: none;border-bottom: none;border-left: none;}
+
+.window {height: 4em;width: 3em;margin-bottom: 2em;background: white;}
+
+#step2 {
+
+margin-left: 2.125em;
+
+margin-top: -.125em;
+}
+#step3 {
+
+margin-left: 4.125em;
+
+margin-top: -.125em;
+}
+
+#roof {
+    background: white;
+    height: 0;
+}
+
+#floor2 {
+}
+
+#floor1 {
+    margin-top: -.125em;
+}
+
+#stairs {
+
+position: absolute;
+
+right: -1.04em;
+
+margin-top: -3.125em;
+
+border: none;
+
+background: none;
+}
+
+#stair1 {
+
+}
+
+#stair2 {
+
+}
+
+#stair3 {
+
+}
+
+#basement, #basement2, #basement3, #basement4 {
+
+width: 90%;
+
+margin-left: 10%;
+
+height: 5.833333em;
+
+margin-top: -.125em;
+
+background: white;
+
+display: none;
+
+opacity: 0;
+animation: fadein .3s ease-out;
+
+
+animation-delay: 1s;
+position: relative;
+animation-fill-mode: forwards;
+overflow: hidden;
+}
+
+#basement:after, #basement2:after, #basement3:after, #basement4:after  {
+	content: " ";
+	position: absolute;
+	display: inline-block;
+	left: 0;
+	background: blue;
+	bottom: -100%;
+	height: 100%;
+	width: 100%;
+animation: flood 5s linear;
+
+
+animation-delay: 1s;
+position: relative;
+animation-fill-mode: forwards;
+
+}
+
+#basement4:after {
+	background: #7c5308;
+}
+
+@keyframes flood {
+	to {bottom: -50%;}
+}
+
+#basement2 {
+	display: block;
+	opacity: 1;
+}
+
+#basement3 {
+	animation-delay: 1.5s;
+	display: block;
+}
+
+#basement2:after {animation: drain 3s linear;animation-delay: 1s;position: relative;animation-fill-mode: forwards;bottom: -50%;}
+
+@keyframes drain {
+	to {bottom: -100%;}
+}
+
+@keyframes fadein {
+	 to {
+		opacity: 1;
+	}
+}
+
+#basement2:before {
+	content: "❆ super cold";
+	opacity: 0;
+	animation: fadein .3s ease-out;
+	animation-delay: 2s;
+	font-size: 300%;
+	position: relative;
+	animation-fill-mode: forwards;
+	overflow: hidden;
+}
+
+
+#basement3:before {
+	content: "❆ still super cold";
+	opacity: 0;
+	animation: fadein .3s ease-out;
+	animation-delay: 2s;
+	font-size: 250%;
+	position: relative;
+	animation-fill-mode: forwards;
+	overflow: hidden;
+}
+
+
+#door {
+	border-bottom: none;
+	height: 6.25em;
+	background: white;
+	width: 3em;
+	margin-bottom: -.125em;
+}
