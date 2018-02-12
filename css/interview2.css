@@ -201,4 +201,5 @@ color: #0a0505;
 #link-back a {
   text-decoration: none;
   text-transform: uppercase;
+  display: block;
 }
