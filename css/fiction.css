@@ -590,4 +590,16 @@ width: 100%;
 	margin-top: 0;
 	}
 
+	#big-wrap {
+		margin: 4.61%;
+		padding: 4.61% 4.61% 0;
+		font-size: var(--step-down-2);
+	}
+
+	.title {
+
+left: 4.61%;
+
+right: 4.61%;
+	}
 }
