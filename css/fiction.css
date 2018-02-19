@@ -573,10 +573,21 @@ nav a {
 	}
 }
 
-
 @media screen and (max-width: 1400px) {
 	section {
 
 width: calc(50% - .75rem);
 	}
+}
+
+
+@media screen and (max-width: 650px) {
+	section {
+
+width: 100%;
+	}
+	section:nth-child(even) {
+	margin-top: 0;
+	}
+
 }
