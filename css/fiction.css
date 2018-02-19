@@ -580,6 +580,19 @@ width: calc(50% - .75rem);
 	}
 }
 
+@media screen and (max-width: 850px) {
+	#facts {
+		margin-top: 20rem;
+		font-size: inherit;
+	}
+	#facts h2 {
+		width: 75%;
+	}
+
+	#facts h2:nth-child(even) {
+		margin: 6rem 0 6rem auto;
+	}
+}
 
 @media screen and (max-width: 650px) {
 	section {
@@ -602,4 +615,5 @@ left: 4.61%;
 
 right: 4.61%;
 	}
+
 }
