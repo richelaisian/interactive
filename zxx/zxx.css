@@ -1,0 +1,30 @@
+@font-face {
+    font-family: zxx-sans;
+    src: url(ZXX-Sans.woff);
+}
+
+@font-face {
+    font-family: zxx-sans;
+    src: url(ZXX-Bold.woff);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: zxx-camo;
+    src: url(ZXX-Camo.woff);
+}
+
+@font-face {
+    font-family: zxx-false;
+    src: url(ZXX-False.woff);
+}
+
+@font-face {
+    font-family: zxx-noise;
+    src: url(ZXX-Noise.woff);
+}
+
+@font-face {
+    font-family: zxx-xed;
+    src: url(ZXX-Xed.woff);
+}

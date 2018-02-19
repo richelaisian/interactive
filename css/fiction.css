@@ -1,0 +1,566 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	overflow-x: hidden;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+	font-size: 40px;
+	font-family: Helvetica , Arial, "Lucida Grande", sans-serif;
+}
+
+:root {
+	--step-up-5: 2em;
+	--step-up-4: 1.7511em;
+	--step-up-3: 1.5157em;
+	--step-up-2: 1.3195em;
+	--step-up-1: 1.1487em;
+	/* baseline: 1em */
+	--step-down-1: .8706em;
+	--step-down-2: .7579em;
+	--step-down-3: .6599em;
+	--step-down-4: .5745em;
+	--step-down-5: .5em;
+}
+
+body {
+}
+
+.home-body {
+	background: #ff5757;
+	color: #ff5757;
+	animation: background-fadein 1s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+.visit-body {
+	background: white;
+	color: #ff5757;
+	overflow: hidden;
+}
+
+#big-wrap {
+	margin: .75rem;
+	padding: .75rem .75rem 0;
+	/* border: solid 3px; */
+	position: relative;
+	border-color: inherit;
+}
+
+.title {display: flex;justify-content: space-between;align-items: baseline;left: .75rem;right: .75rem;}
+
+#splash {position: absolute;}
+
+#logo {}
+
+#content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 3rem;
+	opacity: 0;
+	position: absolute;
+	top: 3rem;
+	animation: fadeinopacity .75s;
+	animation-fill-mode: forwards;
+	animation-delay: .75s;
+}
+
+.background {
+	position: fixed;
+	top: 3.5rem;
+	width: calc(100vw - 3.5rem);
+	z-index: -100;
+	border-color: white;
+	height: 20rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#landing-background {
+	animation: border-fadein 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+#visit-background {
+	border-color: inherit;
+	position: absolute;
+	animation: slideover 1s ease-out;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+	height: 19.9rem;
+}
+
+#history-background {
+	border-color: #ff5757;
+	animation: fadetowhite .75s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadetowhite {
+	to {border-color: white;}
+}
+
+@keyframes slideover {
+	to {
+		width: 45%;
+	}
+}
+
+#map {
+	animation: untransform 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes untransform {
+	to {
+		transform: rotate3d(2, -2, 2, 0deg);
+	}
+}
+
+@keyframes background-fadein {
+	to {
+		background: white;
+	}
+}
+
+@keyframes fadetored {
+	to {
+		background: #ff5757;
+		color: white;
+	}
+}
+
+@keyframes border-fadein {
+	to {
+		border-color: inherit;
+	}
+}
+
+.line {
+	width: 6.25vw;
+	position: absolute;
+	box-sizing: border-box;
+	height: 6.25vw;
+}
+
+.square {
+	width: 23vw;
+	position: relative;
+	margin: calc(6.25vw + 1rem);
+	height: 23vw;
+	box-sizing: border-box;
+	border: solid 3px;
+	border-color: inherit;
+	transform: rotate3d(2, -2, 2, 71deg);
+}
+
+#top-line {
+	border-right: solid 3px;
+	border-bottom: solid 3px;
+	left: -6.25vw;
+	top: -6.25vw;
+	border-color: inherit;
+}
+
+#left-line {
+	right: -6.25vw;
+	border-left: solid 3px;
+	border-bottom: solid 3px;
+	top: -6.25vw;
+	border-color: inherit;
+}
+
+#right-line {
+	border-top: solid 3px;
+	border-left: solid 3px;
+	right: -6.25vw;
+	bottom: -6.25vw;
+	border-color: inherit;
+}
+
+#bottom-line {
+	border-top: solid 3px;
+	border-right: solid 3px;
+	left: -6.25vw;
+	bottom: -6.25vw;
+	border-color: inherit;
+}
+
+section {
+	margin-bottom: 2rem;
+	width: calc(25% - .75rem);
+	display: inline-block;
+}
+
+section:last-child {
+	margin-bottom: 0;
+}
+
+section h2 {
+	margin-bottom: .5em;
+}
+
+section p {
+	font-size: var(--step-down-3);
+}
+
+section:nth-child(even) {
+	margin-top: 5rem;
+}
+
+#facts {
+	font-size: var(--step-up-2);
+	margin-top: 22rem;
+}
+
+#facts h2 {
+	width: 50%;
+}
+
+#facts h2:nth-child(even) {
+	text-align: right;
+	margin: 8rem 0 8rem auto;
+}
+
+.landing-nav {
+}
+
+nav {
+	position: relative;
+	text-align: center;
+}
+
+a:link,
+a:visited {
+	color: inherit;
+	font-family: 'ZXX-Sans', Helvetica , Arial, "Lucida Grande", sans-serif;
+	text-decoration: none;
+}
+
+a:active,
+a:hover {
+	text-decoration: none;
+	color: inherit;
+	font-family: 'ZXX-noise', Helvetica , Arial, "Lucida Grande", sans-serif;
+}
+nav a {
+	margin: 0 0px 0px 30px;
+	display: inline-block;
+}
+
+.table {
+	font-size: var(--step-down-5);
+}
+
+.table ul {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: solid 1px;
+}
+
+.table ul li {
+	padding: 12.5px 12.5px 12.5px 25px;
+}
+
+.table ul li:first-child {
+	width: 34%;
+}
+
+.table ul li:nth-child(2n) {
+	width: 24%;
+	border-left: solid 1px;
+	padding-left: 25px;
+}
+
+.table ul li:nth-child(3n) {
+	width: 14%;
+	border-left: 1px solid;
+}
+
+.table ul:last-child {
+	border-bottom: none;
+}
+
+#map-legend {
+	position: absolute;
+	width: 40%;
+	left: 50%;
+	top: 7.5rem;
+	animation: fadeinopacity 1s linear;
+	opacity: 0;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+}
+
+.marker {
+	display: inline-block;
+	position: absolute;
+	color: white;
+	background: #ff5757;
+}
+
+#possum-alley {
+	top: 63%;
+	width: 8%;
+	left: 49%;
+	height: 12%;
+}
+
+#possum-alley:after {
+	content: "1";
+	position: absolute;
+	right: .125em;
+}
+
+#forest {
+	top: 52%;
+	width: 21%;
+	left: 16%;
+	height: 14%;
+}
+
+#forest:after {
+	content: "2";
+	position: absolute;
+	right: .125em;
+}
+
+#netower {
+	top: 3%;
+	width: 17%;
+	right: 3%;
+	height: 25%;
+}
+
+#netower:after {
+	content: "3";
+	position: absolute;
+	margin-left: .125em;
+}
+
+#center-lot {
+	top: 35%;
+	width: 36%;
+	right: 3%;
+	height: 25%;
+}
+
+#center-lot:after {
+	content: "4";
+	position: absolute;
+	left: .125em;
+}
+
+#museum {
+	bottom: 3%;
+	width: 19%;
+	left: 28%;
+	height: 25%;
+}
+
+#museum:after {
+	content: "5";
+	position: absolute;
+	left: .125em;
+}
+
+#store {
+	bottom: 3%;
+	width: 13%;
+	right: 3%;
+	height: 13%;
+}
+
+#store:after {
+	content: "6";
+	position: absolute;
+	left: .125em;
+}
+
+#ballroom {
+	bottom: 3%;
+	width: 23%;
+	right: 18%;
+	height: 25%;
+}
+
+#ballroom:after {
+	content: "7";
+	position: absolute;
+	left: .125em;
+}
+
+#diner {
+	top: 23%;
+	width: 14%;
+	left: 3%;
+	height: 25%;
+}
+
+#diner:after {
+	content: "8";
+	position: absolute;
+	left: .125em;
+}
+
+#ccenter {
+	top: 3%;
+	width: 36%;
+	left: 22%;
+	height: 19%;
+}
+
+#ccenter:after {
+	content: "9";
+	position: absolute;
+	left: .125em;
+}
+
+
+#marker-container {
+	position: absolute;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	animation: fadeinopacity 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+}
+@keyframes fadeinopacity {
+	to {
+		opacity: 1;
+	}
+}
