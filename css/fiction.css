@@ -200,6 +200,8 @@ body {
 	opacity: 0;
 	position: absolute;
 	top: 3rem;
+	left: .75rem;
+	right: .75rem;
 	animation: fadeinopacity .75s;
 	animation-fill-mode: forwards;
 	animation-delay: .75s;
@@ -609,11 +611,21 @@ width: 100%;
 		font-size: var(--step-down-2);
 	}
 
+	#content {
+		left: 4.6%;
+		right: 4.6%;
+	}
+
 	.title {
 
 left: 4.61%;
 
 right: 4.61%;
+	}
+
+	}
+	section:last-child {
+		margin-bottom: 9.22%;
 	}
 
 }
