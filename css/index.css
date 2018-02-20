@@ -104,13 +104,13 @@ section {
   border: solid 1px;
 }
 
-#content-wrap>section {vertical-align: top;display: inline-block;max-width: 800px;font-size: var(--step-up-1);}
+#sections>section {vertical-align: top;display: inline-block;max-width: 800px;font-size: var(--step-up-1);}
 
-#content-wrap>section>h2 {
+#sections>section>h2 {
   font-size: var(--step-up-5);
 }
 
-#content-wrap>section>*{
+#sections>section>*{
 
 font-size: var(--step-down-4);
 }
@@ -137,4 +137,38 @@ font-size: var(--step-down-3);
 section>p, section>ul, section>ol {
     margin: 1em 0;
     padding: 0px 40px;
+}
+
+#sections {
+
+display: flex;
+
+flex-wrap: wrap;
+
+align-items: flex-start;
+
+justify-content: flex-start;
+}
+
+#randomizer {
+  position: absolute;
+  cursor: pointer;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.pos-1 {
+  order: 1;
+}
+
+.pos-2 {
+  order: 2;
+}
+
+.pos-3 {
+  order: 3;
+}
+
+.pos-4 {
+  order: 4;
 }

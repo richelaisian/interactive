@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body style="
+    background: black;
+    color: white;
+    font-size: 72px;
+    font-family: sans-serif;
+    position: relative;
+  ">
+
+    <div>
+      <h1>Content</h1>
+      <div style="position: absolute; top: 0; right: 0;"id="font-size"></div>
+      <p>
+        <span>content</span>
+        <span>content</span>
+        <span>content</span>
+        <span>content</span>
+      </p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+      // var name = "Jake";
+      // var year = "2018";
+      // var introduction = "Hi I'm " + name + " I'm gping to eat a bagel in " + year;
+      // console.log(introduction);
+      //
+      // function hello(person) {
+      //   var greeting = "Hello " + person + " it's ";
+      //   var date = new Date();
+      //   alert(greeting + date);
+      // }
+      //
+      // hello("Jake");
+
+      $(document).ready(function(){
+        var size = Math.floor(Math.random() * 72) + 1;
+        var units = "px";
+        var fontSize = size + units;
+
+        console.log("font-size: " + fontSize);
+        $("body").css("font-size", fontSize);
+        $("#font-size").append("font-size: " + fontSize);
+
+      });
+
+
+
+    </script>
+  </body>
+</html>

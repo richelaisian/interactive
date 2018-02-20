@@ -14,13 +14,66 @@
         <h1>About</h1>
         <a href="index.html">Home</a>
       </nav>
-      <div class="caption">
-        <p>This is Jake’s class website for <a href="http://spring2018-yale.veryinteractive.net" target="_blank">Spring 2018’s Art369b: Interactive Design and the Internet</a>.</p>
+
+      <div id="sections">
+        <section>
+          <h2><span>T</span><span>h</span><span>i</span><span>s</span> <span>S</span><span>i</span><span>t</span><span>e</span></h2>
+          <p>
+            This is Jake’s class website for <a href="http://spring2018-yale.veryinteractive.net" target="_blank">Spring 2018’s Art369b: Interactive Design and the Internet</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2><span>T</span><span>h</span><span>i</span><span>s</span> <span>G</span><span>u</span><span>y</span></h2>
+          <p>
+            Originally from New York City, Jake is a humanities major at Yale University. He is currently writing his senior essay on Jean Rhys and the Mannequin. He keeps going back and forth on how he feels about one page websites, sometimes they spook him.
+          </p>
+        </section>
       </div>
-      <section>
-        Originally from New York City, Jake is a humanities major at Yale University. He is currently writing his senior essay on Jean Rhys and the Mannequin. He keeps going back and forth on how he feels about one page websites.
-      </section>
     </div>
+
+    <div id="randomizer">
+      mixup
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        function mixup(thisThing) {
+            var positionNumber = Math.floor(Math.random() * 4) + 1;
+            $(thisThing).removeClass();
+            $(thisThing).addClass('pos-' + positionNumber);
+        }
+
+        $('section').each(function() {
+          mixup(this);
+        });
+
+        $('#randomizer').click(function(event) {
+          $('section').each(function() {
+            mixup(this);
+          });
+        });
+
+        function randomAngle(aSpan) {
+            var angleNumber = Math.floor(Math.random() * 30) + 1;
+            var angleValue = 'rotate(-' + angleNumber + 'deg)';
+
+            $(aSpan).css(' ');
+            $(aSpan).css("transform", angleValue);
+        }
+
+        $('span').each(function() {
+          randomAngle(this);
+        });
+
+        $('#randomizer').click(function(event) {
+          $('span').each(function() {
+            randomAngle(this);
+          });
+        });
+      });
+    </script>
   </body>
 
 </html>
