@@ -151,7 +151,7 @@ justify-content: flex-start;
 }
 
 #randomizer {
-  position: absolute;
+  position: fixed;
   cursor: pointer;
   bottom: 1rem;
   right: 1rem;
