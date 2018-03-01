@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Fully Responsive Unique Storefront Experience</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed:700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/slot-machine.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <div id="background">
+      <div class="wall back" id="back-wall">
+        <div class="window">
+        </div>
+        <div id="cashier">
+          <div id="cashier-guy">
+            <div class="head">
+              <div class="eye"></div>
+              <div class="eye"></div>
+            </div>
+            <div class="body">
+            </div>
+          </div>
+          <div id="counter" class="table">
+            <div id="register-display">
+              $$$
+            </div>
+            <div id="register">
+            </div>
+          </div>
+          <div id="shelves" class="table">
+            <div class="shelf">
+              <div class="item type-1"></div>
+              <div class="item type-5"></div>
+              <div class="item type-2"></div>
+              <div class="item type-4"></div>
+              <div class="item type-3"></div>
+              <div class="item type-6"></div>
+              <div class="item type-3"></div>
+
+            </div>
+            <div class="shelf">
+              <div class="item type-1"></div>
+              <div class="item type-1"></div>
+              <div class="item type-3"></div>
+              <div class="item type-2"></div>
+              <div class="item type-3"></div>
+              <div class="item type-1"></div>
+              <div class="item type-3"></div>
+            </div>
+            <div class="shelf">
+              <div class="item type-2"></div>
+              <div class="item type-2"></div>
+              <div class="item type-6"></div>
+              <div class="item type-3"></div>
+              <div class="item type-2"></div>
+              <div class="item type-4"></div>
+              <div class="item type-5"></div>
+            </div>
+          </div>
+          <div id="customer-guy">
+            <div class="head">
+            </div>
+            <div class="body">
+            </div>
+            <div class="legs">
+              <div class="leg left-leg"></div>
+              <div class="leg right-leg"></div>
+            </div>
+          </div>
+          <div id="cashier-text" class="text-box">
+            Hey, what's up?
+          </div>
+          <div id="customer-text" class="text-box">
+            Hey, what's up?
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      // various randomizations for colors
+
+      $(document).ready(function()
+      {
+        function mixup(thisThing)
+        {
+          var positionNumber = Math.floor(Math.random() * 3) + 1;
+          $(thisThing).removeClass('type-1 type-2 type-3 type-4 type-5 type-6');
+          $(thisThing).addClass('tree-' + positionNumber);
+        }
+
+        $('.window').each(function()
+        {
+          mixup(this);
+        });
+
+
+        function mixup2(thisThing)
+        {
+          var positionNumber = Math.floor(Math.random() * 6) + 1;
+          $(thisThing).addClass('type-' + positionNumber);
+        }
+
+        $('.item').each(function()
+        {
+          mixup2(this);
+        });
+
+
+        function mixup3(thisThing)
+        {
+
+          var quotes = new Array("#ebb2bb", "#9ad6f1", " #fff8a0"),
+            randno = quotes[Math.floor(Math.random() * quotes.length)];
+          $(thisThing).css('background', randno);
+        }
+
+        $('.head').each(function()
+        {
+          mixup3(this);
+        });
+
+        function mixup4(thisThing)
+        {
+
+          var quotes = new Array("#ec8c8c", "#a7d49b", "#919dd9"),
+            randno = quotes[Math.floor(Math.random() * quotes.length)];
+          $(thisThing).css('background', randno);
+        }
+
+        $('.body').each(function()
+        {
+          mixup4(this);
+        });
+
+        mixup3('#customer-guy .leg');
+
+      });
+
+
+      // text randomizations
+
+      $(document).ready(function()
+      {
+        var quotes = new Array("Hey mister guy!", "Hello, how can I help you?", "How are you today?", "Is that all?"),
+          randno = quotes[Math.floor(Math.random() * quotes.length)];
+
+          if (randno == "Is that all?") {
+            var bigNumber = Math.floor(Math.random() * 11) + 1;
+
+            var itemArray = new Array(" eggs", " sticks of butter", " packs of twizzlers"),
+              randomItem = itemArray[Math.floor(Math.random() * itemArray.length)];
+
+            var closerArray = new Array("I'm having friends over.", " You ever listen to Dream Theater?", " So uhm, how are you?"),
+              closer = closerArray[Math.floor(Math.random() * closerArray.length)];
+
+            $('#customer-text').text("Oh actually, can I have " + bigNumber + randomItem + "? ... " + closer);
+          }
+
+          if (randno == "Hey mister guy!") {
+
+            var symbolArray = new Array(" Dan.", " ῒΐῖῗῘ.", " Mister Guy Jr."),
+              symbol = symbolArray[Math.floor(Math.random() * symbolArray.length)];
+
+            $('#customer-text').text("Mister guy is my father, please call me" + symbol);
+          }
+
+
+          if (randno == "Hello, how can I help you?") {
+            var textArray = new Array("Do you have like, a gallon of just pickle juice?", "Can we connect on LinkedIn", "One blockchain please"),
+              textLine = textArray[Math.floor(Math.random() * textArray.length)];
+              $('#customer-text').text(textLine);
+          }
+
+          if (randno == "How are you today?") {
+            var textArray = new Array("I don't know, I think Black Mirror might be just ok...", "Not great, you ever eat something thinking it's a crumb, but then it's not a crumb?"),
+              textLine = textArray[Math.floor(Math.random() * textArray.length)];
+              $('#customer-text').text(textLine);
+          }
+
+
+
+        $('#cashier-text').text(randno);
+      });
+
+    </script>
+  </body>
+
+</html>
