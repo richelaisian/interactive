@@ -1,5 +1,6 @@
 # Interview with Bix Archer
----
+
+
 ## About
 
 **Bix Archer is a Junior at Yale College Majoring in Humanities and Art. She is from San Francisco, California and works primarily in paint, prints and fabric**
