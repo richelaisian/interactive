@@ -1,0 +1,378 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	margin: 12.5em 3.125em;
+	font-size: 25px;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.character:after,
+.character:before {
+	mix-blend-mode: inherit;
+}
+
+.row {
+	border-bottom: solid gainsboro 0.025em;
+	border-top: solid gainsboro 0.025em;
+	margin-bottom: 18.75em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+#test-space {
+	margin-top: 50vh;
+}
+
+
+.space {
+	display: inline-block;
+	width: 12.5em;
+}
+.character {
+	width: 1em;
+	height: 1em;
+	vertical-align: bottom;
+	margin: 0 .125em;
+	border: .125em solid blue;
+	border-radius: 100%;
+	margin-bottom: 0;
+	background: white;
+	display: inline-block;
+	mix-blend-mode: multiply;
+	position: relative;
+}
+
+.median {}
+
+.ascender {
+}
+
+.descender {}
+
+.letter-a {}
+
+.letter-a:before {
+	content: " ";
+	mix-blend-mode: inherit;
+}
+
+.letter-a:after {
+	content: " ";
+	position: absolute;
+	right: -.125em;
+	bottom: -.125em;
+	height: 1.25em;
+	width: .125em;
+	mix-blend-mode: inherit;
+	background: red;
+}
+
+.letter-b {}
+
+.letter-b:before {
+	content: " ";
+	position: absolute;
+	left: -.125em;
+	bottom: -.125em;
+	height: 1.75em;
+	width: .125em;
+	background: red;
+}
+
+.letter-b:after {
+}
+
+.letter-c {
+	box-sizing: content-box;
+	margin-right: 0;
+	border-right: .125em solid transparent;
+}
+
+.letter-c:before {
+	content: " ";
+	mix-blend-mode: inherit;
+}
+
+.letter-c:after {}
+
+.letter-d {}
+
+.letter-d:before {
+	content: " ";
+}
+
+.letter-d:after {
+	content: " ";
+	position: absolute;
+	right: -.125em;
+	bottom: -.125em;
+	height: 1.75em;
+	width: .125em;
+	mix-blend-mode: inherit;
+	background: red;
+}
+
+.letter-e {
+	border: .125em solid transparent;
+	border-bottom: .125em solid blue;
+}
+
+.letter-e:before {
+	content: " ";
+	position: absolute;
+	border: solid .125em blue;
+	width: 1em;
+	height: 1em;
+	left: -.125em;
+	border-radius: 100%;
+	transform: rotate(45deg);
+	border-right: solid .125em transparent;
+	top: -.125em;
+}
+
+.letter-e:after {
+	content: " ";
+	position: absolute;
+	height: .125em;
+	width: 1.23em;
+	background: red;
+	mix-blend-mode: inherit;
+	right: -.24em;
+	margin-right: .125em;
+	top: 0.375em;
+}
+
+.letter-f {
+	height: 23.438em;
+	width: 7.813em;
+	margin-left: 3.125em;
+	margin-top: -9.375em;
+	border-bottom: none;
+	border-right: solid .125em transparent;
+	border-radius: 9.375em;
+	border-bottom-left-radius: 0;
+	margin-right: 0;
+}
+
+.letter-f:after {
+	content: " ";
+	width: 12.5em;
+	height: .125em;
+	background: red;
+	position: absolute;
+	mix-blend-mode: inherit;
+	top: 7.813em;
+	left: -4.688em;
+}
+
+.letter-f:before {
+	content: " ";
+}
+
+.letter-g {
+	position: relative;
+	box-sizing: content-box;
+}
+
+.letter-g:before {
+	content: " ";
+	width: 12.5em;
+	height: 12.5em;
+	position: absolute;
+	right: -.125em;
+	border: solid .125em red;
+	border-top: solid .125em transparent;
+	transform: rotate(45deg);
+	border-left: solid .125em transparent;
+	border-radius: 100%;
+	bottom: -10.813em;
+	mix-blend-mode: inherit;
+}
+
+.letter-g:after {
+	content: " ";
+	height: 3.125em;
+	border-radius: 6.25em;
+	box-sizing: content-box;
+	border: .125em solid red;
+	border-bottom-left-radius: 0;
+	border-right: .125em solid transparent;
+	border-bottom: none;
+	width: .125em;
+	top: 0;
+	right: -4.688em;
+	height: 14.063em;
+	position: absolute;
+	mix-blend-mode: inherit;
+}
+
+.letter-h {
+
+border-bottom: none;
+
+border-bottom-left-radius: 0;
+
+border-bottom-right-radius: 0;
+
+height: 14.063em;
+}
+
+.letter-h:after {
+	content: " ";
+	position: absolute;
+	left: -.125em;
+	bottom: 0;
+	height: 23.438em;
+	width: .125em;
+	background: red;
+}
+
+.letter-i {
+	border: none;
+	height: 1em;
+	width: .125em;
+	background: blue;
+	border-radius: 0;
+}
+
+.letter-i:after {
+	content: "";
+	width: 2.313em;
+	height: 2.313em;
+	background: red;
+	position: absolute;
+	border-radius: 100%;
+	left: -.4em;
+	top: -4.688em;
+}
