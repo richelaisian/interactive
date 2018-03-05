@@ -1,0 +1,222 @@
+* {
+  transition: .3s ease-out;
+  transition-delay: .3s;
+}
+
+body {
+  margin: 0;
+  position: absolute;
+  overflow-x: hidden;
+  top: 0;
+  background: #b6e3ff;
+}
+
+.night {
+  background: #070707;
+}
+#sky {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#sun {
+
+position: absolute;
+
+top: 100px;
+
+right: 100px;
+
+width: 200px;
+
+cursor: pointer;
+
+height: 200px;
+
+background: lightyellow;
+
+box-shadow: 0px 0px 20px lightyellow;
+
+border-radius: 100%;
+}
+
+.night #sun {
+  top: -300px;
+}
+
+
+#guy {
+  margin-left: 100px;
+  transform: rotate(-10deg);
+  border-right-width: 61px;
+  width: 180px;
+  height: 250px;
+  position: relative;
+  margin-top: 200px;
+}
+
+#nose {
+  background: pink;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 103px;
+  left: 127px;
+  border-radius: 100%;
+}
+
+.sitting#guy {}
+
+.sitting #body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  background: black;
+  border-radius: 100%;
+  transform-origin: bottom;
+}
+
+.sleeping #body{
+  transform: rotatex(51deg) scale(1.2);
+  cursor: pointer;
+}
+
+.sitting #eyes {
+    position: absolute;
+    top: 68px;
+    width: 50%;
+    left: 25%;
+    height: 27px;
+    display: flex;
+    z-index: 100;
+    justify-content: space-around;
+}
+
+.sitting #eyes div {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+21,ffa5ff+98 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 21%, #ffa5ff 98%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 21%,#ffa5ff 98%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#ffffff 21%,#ffa5ff 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffa5ff',GradientType=0 ); /* IE6-9 */
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+
+.sleeping #eyes div {
+  height: 2px;
+}
+
+
+.sitting #legs {
+    width: 118px;
+    position: absolute;
+    left: 80px;
+    bottom: 0;
+    height: 50px;
+    transform: rotate(10deg);
+}
+
+
+.sitting #legs div {
+  width: 100vw;
+  height: 20px;
+  position: absolute;
+  background: black;
+  bottom: 5px;
+  left: 19px;
+}
+.sitting #legs #right-leg {
+  bottom: 39px;
+  left: 10px;
+}
+.sitting #arms {}
+
+.more-legs {
+
+width: 100%;
+
+margin-top: 97px;
+}
+
+.leg {
+  height: 20px;
+  width: 100vw;
+  background: black;
+  margin-bottom: 15px;
+}
+
+
+.more-legs:last-child .leg {
+
+width: 60vw;
+
+position: relative;
+}
+
+.foot {
+
+position: absolute;
+
+right: -10px;
+
+bottom: -1px;
+
+background: white;
+
+border: solid black 3px;
+
+width: 20px;
+
+height: 60px;
+
+border-radius: 100%;
+
+animation: twiddle .5s ease-out  infinite alternate;
+
+transform-origin: bottom;
+}
+
+.night .foot {
+  animation: none;
+  transform: rotate(40deg);
+}
+
+
+.leg:last-child .foot {
+  animation-delay: .5s;
+}
+
+#background {
+
+width: 100%;
+
+height: 100%;
+
+overflow: hidden;
+
+z-index: -100;
+
+border-top-right-radius: 100%;
+
+background: green;
+
+margin-top: 200px;
+
+box-shadow: inset -96px -67px 232px #054505;
+}
+.night #background {
+ box-shadow: inset 0px -67px 10002px 200px #000000;
+}
+@keyframes twiddle {
+  to {
+    transform: rotateZ(30deg);
+  }
+}

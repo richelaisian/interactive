@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/organism.css">
+  </head>
+
+  <body>
+    <div id="sky">
+      <div id="sun">
+      </div>
+    </div>
+    <div id="background">
+      <div id="guy" class="sitting">
+        <div id="body">
+          <div id="eyes">
+            <div></div>
+            <div></div>
+          </div>
+          <div id="nose">
+          </div>
+          <div id="arms"></div>
+        </div>
+        <div id="legs">
+          <div id="left-leg"></div>
+          <div id="right-leg"></div>
+        </div>
+      </div>
+      <div class="more-legs">
+        <div class="leg"></div>
+        <div class="leg"></div>
+      </div>
+      <div class="more-legs">
+        <div class="leg"></div>
+        <div class="leg"></div>
+      </div>
+      <div class="more-legs">
+        <div class="leg"></div>
+        <div class="leg"></div>
+      </div>
+      <div class="more-legs">
+        <div class="leg"></div>
+        <div class="leg"></div>
+      </div>
+      <div class="more-legs">
+        <div class="leg"></div>
+        <div class="leg"></div>
+      </div>
+      <div class="more-legs">
+        <div class="leg"></div>
+        <div class="leg"></div>
+      </div>
+      <div class="more-legs">
+        <div class="leg"></div>
+        <div class="leg"></div>
+      </div>
+      <div class="more-legs">
+        <div class="leg"></div>
+        <div class="leg"></div>
+      </div>
+      <div class="more-legs">
+        <div class="leg"></div>
+        <div class="leg"></div>
+      </div>
+      <div class="more-legs">
+        <div class="leg"></div>
+        <div class="leg"></div>
+      </div>
+      <div class="more-legs">
+        <div class="leg">
+          <div class="foot"></div>
+        </div>
+        <div class="leg">
+          <div class="foot"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $("#sun").click(function(event)
+      {
+        $('body').toggleClass('night');
+        $('#guy').toggleClass('sleeping');
+      });
+
+
+        $("#guy").click(function(event)
+        {
+          if ($('body').hasClass('night')) {            
+              $('body').toggleClass('night');
+              $('#guy').toggleClass('sleeping');
+          }
+        });
+    </script>
+  </body>
+
+</html>
