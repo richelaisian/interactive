@@ -59,10 +59,6 @@ I was just looking to see if there was MSG in it. But there wasn't.
 
 I have mixed feelings about the internet. I think it provides a lot of access and communication across spaces and between people and communities that would be difficult to access otherwise. And access to art and literature, particularly visual art, and exposure to imagery. And I like how there are communities that can be formed across vast distances and regardless of geographical location and you can have a community that transcends that space. But at the same time, I think it works to create greater feelings of isolation in some ways. And looking at studies about how social media can make people feel worse about themselves.
 
-**How would you change the internet if you could just do whatever to it?**
-
-////
-
 **What would you do tomorrow if there was no capitalism?**
 
 Umm...celebrate with my friends...(laughs) hunt in the morning, fish in the afternoon and criticize in the evening.
