@@ -1223,7 +1223,7 @@ beige: beige
   display: inline-flex;
   align-items: flex-end;
   vertical-align: bottom;
-  width: .27em;
+  width: .05em;
   position: relative;
 }
 
@@ -1233,7 +1233,7 @@ beige: beige
   height: .05em;
   background: black;
   content: "";
-  left: .025em;
+  left: 0;
 }
 
 .exclaimation:after {
@@ -1245,9 +1245,9 @@ beige: beige
   transform-origin: bottom left;
   position: absolute;
   bottom: 0.1em;
-  border-left: solid transparent .05em;
+  border-left: solid transparent .025em;
   left: 0;
   z-index: -1;
   border-top: solid .7em black;
-  border-right: solid .05em transparent;
+  border-right: solid .025em transparent;
 }
