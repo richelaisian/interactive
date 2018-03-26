@@ -1,5 +1,4 @@
-body {font-family: monospace;margin: 0;font-size: 30px;
-background: whitesmoke;}
+body {font-family: monospace;margin: 0;font-size: 30px;}
 
 :root {
   --step-up-5: 2em;
@@ -13,6 +12,7 @@ background: whitesmoke;}
   --step-down-3: .6599em;
   --step-down-4: .5745em;
   --step-down-5: .5em;
+  background: whitesmoke;
 }
 
 td {}
