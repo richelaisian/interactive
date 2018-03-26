@@ -1,0 +1,147 @@
+body {
+  font-size: 250px;
+  background: beige;
+}
+
+section {
+  margin: 200px;
+}
+
+.letter:first-child {
+
+margin-left: 0em;
+}
+
+.letter {
+  margin-left: -.2em;
+}
+
+.italic-condensed {
+  margin-left: -.3em;
+  transform: skewy(25deg);
+  position: relative;
+}
+
+.staircase {
+  margin-left: -.2em;
+  transform: skewy(25deg);
+  position: relative;
+}
+
+.staircase:nth-child(even) {
+  transform: skewy(-25deg);
+}
+
+.a {
+  overflow: visible;
+  height: .5em;
+  display: inline-flex;
+  align-items: flex-end;
+  vertical-align: bottom;
+}
+
+.a:after { content: "";
+  width: .25em;
+  height: .38em;
+  border: solid .01em rgb(187, 18, 18);
+  box-shadow: -0.01em -0.05em beige, 0 -0.1em rgb(187, 18, 18);
+}
+
+.b {
+  overflow: visible;
+  height: .5em;
+  display: inline-flex;
+  align-items: flex-end;
+  vertical-align: bottom;
+}
+
+.b:after { content: "";
+  width: .25em;
+  height: .44em;
+  border: solid .01em rgb(187, 18, 18);
+  border-top: solid .05em rgb(187, 18, 18);
+  box-shadow: 0.01em -0.4em beige, 0 -0.3em rgb(187, 18, 18);
+}
+
+.d {
+  overflow: visible;
+  height: .5em;
+  display: inline-flex;
+  align-items: flex-end;
+  vertical-align: bottom;
+}
+
+.d:after {
+  content: "";
+  width: .25em;
+  height: .44em;
+  border: solid .01em rgb(187, 18, 18);
+  border-top: solid .05em rgb(187, 18, 18);
+  box-shadow: -0.01em -0.4em beige, 0 -0.3em rgb(187, 18, 18);
+}
+
+.h {
+  overflow: visible;
+  height: .5em;
+  display: inline-flex;
+  align-items: flex-end;
+  vertical-align: bottom;
+}
+
+.h:after { content: "";
+  width: .25em;
+  height: .45em;
+  border: solid .01em rgb(187, 18, 18);
+  border-top: solid .05em rgb(187, 18, 18);
+  border-bottom: none;
+  box-shadow: 0.01em -0.4em beige, 0 -0.3em rgb(187, 18, 18);
+}
+
+.n {
+  overflow: visible;
+  height: .5em;
+  display: inline-flex;
+  align-items: flex-end;
+  vertical-align: bottom;
+}
+
+.n:after { content: "";
+  width: .25em;
+  height: .45em;
+  border: solid .01em rgb(187, 18, 18);
+  border-top: solid .05em rgb(187, 18, 18);
+  border-bottom: none;
+  box-shadow: 0.01em -0.5em beige, 0 -0.04em rgb(187, 18, 18);
+}
+
+.o {
+  overflow: visible;
+  height: .5em;
+  display: inline-flex;
+  align-items: flex-end;
+  vertical-align: bottom;
+}
+
+.o:after { content: "";
+  width: .25em;
+  height: .44em;
+  border: solid .01em rgb(187, 18, 18);
+  border-top: solid .05em rgb(187, 18, 18);
+}
+
+.p {
+  overflow: visible;
+  height: .5em;
+  display: inline-flex;
+  align-items: flex-end;
+  vertical-align: bottom;
+}
+
+.p:after {
+  content: "";
+  width: .25em;
+  height: .44em;
+  border: solid .01em rgb(187, 18, 18);
+  border-top: solid .05em rgb(187, 18, 18);
+  box-shadow: 0.01em 0.4em beige, 0 0.3em rgb(187, 18, 18);
+}
