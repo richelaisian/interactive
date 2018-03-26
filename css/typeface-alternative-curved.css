@@ -1182,7 +1182,7 @@ section {
 
 .question:after {
   content: "";
-  height: .31em;
+  height: .34em;
   background: beige;
   border-bottom: none;
   border-top: 0;
@@ -1202,7 +1202,7 @@ section {
   width: .26em;
   position: absolute;
   top: 0;
-  height: .34em;
+  height: .3em;
   right: 0;
   border: .01em rgb(187, 18, 18) solid;
   border-top: solid .05em rgb(187, 18, 18);
