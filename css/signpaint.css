@@ -4,7 +4,29 @@ body {
 }
 
 section {
-  margin: 200px;
+  margin: 200px 200px 600px 200px;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+hr {
+  margin: 20px 0px;
+  border-color: black;
+}
+
+.sample {
+  margin-bottom: 100px;
+}
+
+#switch-sample *, #switch-sample *:before, #switch-sample *:after {
+  transition: .1s linear;
+}
+
+#switch-sample {
+  cursor: pointer;
 }
 
 /*
