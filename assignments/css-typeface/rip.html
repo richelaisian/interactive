@@ -585,6 +585,7 @@
       // menu toggle
           $('#nav-toggle').click(function(event) {
             $('#nav').fadeToggle();
+            $('#nav a').removeClass('last-clicked')
           });
 
       // smooth scroll
@@ -594,6 +595,8 @@
                     scrollTop: $( $(this).attr('href') ).offset().top
                 }, 500);
                 return false;
+                $(this).addClass('last-clicked');
+                $(this).siblings('a').removeClass('last-clicked');
             });
           });
     </script>

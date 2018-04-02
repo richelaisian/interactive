@@ -13,6 +13,10 @@ a:hover, a:active {
   text-decoration: line-through;
 }
 
+a.last-clicked {
+  text-decoration: line-through;
+}
+
 .word {
   margin-top: 0;
   margin-right: .5em;
