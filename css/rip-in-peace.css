@@ -20,16 +20,13 @@ nav {
 #nav {
   display: none;
   padding: 0;
-  margin: 0;
-  margin-top: .5em;
+  margin: .5em 0 0;
   border: solid black;
   padding-top: .25em;
   background: honeydew;
 }
 
-.open {
-
-}
+.open {}
 
 #nav-toggle {
   width: 1em;
@@ -40,8 +37,7 @@ nav {
 
 li {
   list-style: none;
-  margin: 0 .25em;
-  margin-bottom: .25em;
+  margin: 0 .25em .25em;
   padding-bottom: .25em;
   border-bottom: solid black 3px;
 }
@@ -50,6 +46,7 @@ li:last-child {
   margin-bottom: 0;
   border-bottom: none;
 }
+
 .word:last-child {
   margin-right: 0;
 }
@@ -78,13 +75,13 @@ li:last-child {
   font-size: 2em;
 }
 
-.title>.word {
-    width: 1.06em;
+.title > .word {
+  width: 1.06em;
 }
 
 .subheader {
   flex-wrap: wrap;
-  font-size: .25em;
+  font-size: .5em;
   margin: 0 2em;
   padding-bottom: 1em;
   justify-content: flex-start;
@@ -99,8 +96,7 @@ li:last-child {
 }
 
 .location-wrapper {
-
-margin: .125em;
+  margin: .125em;
 }
 
 .map {
@@ -117,4 +113,16 @@ margin: .125em;
   height: 100%;
 }
 
-.info {position: absolute;top: 0;z-index: 100;mix-blend-mode: overlay;display: flex;flex-direction: column;right: .25em;pointer-events: none;justify-content: center;bottom: 0;left: .25em;}
+.info {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  mix-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  right: .25em;
+  pointer-events: none;
+  justify-content: center;
+  bottom: 0;
+  left: .25em;
+}
