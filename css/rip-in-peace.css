@@ -15,7 +15,7 @@ body {
 
 .header {
   display: flex;
-  font-size: 1em;
+  font-size: 1.25em;
   margin-bottom: 0;
   justify-content: center;
   /* border: solid; */
