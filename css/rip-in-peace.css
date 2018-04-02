@@ -52,6 +52,10 @@ body {
   margin-top: 1em;
 }
 
+.location-wrapper {
+  
+}
+
 .map {
   position: relative;
   top: 0;
