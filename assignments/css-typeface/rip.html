@@ -8,23 +8,26 @@
     <link rel="stylesheet" type="text/css" href="../../css/rip-in-peace.css">
   </head>
   <body>
+    <nav>
+      <div id="nav-toggle"></div>
+      <ul id="nav">
+        <li>silent barn</li>
+        <li>shea stadium</li>
+        <li>aviv</li>
+        <li>david blaine's the steak house</li>
+        <li>palisades</li>
+        <li>death by audio</li>
+        <li>285 kent</li>
+      </ul>
+    </nav>
     <div class="header">
       <div class="title">
         <div class="word">
-          <div class="r letter calligraphic staircase"></div>
+          <div class="d letter calligraphic staircase"></div>
           <div class="i letter calligraphic staircase"></div>
-          <div class="p letter calligraphic"></div>
-        </div>
-        <div class="word">
+          <div class="y letter calligraphic staircase"></div>
           <div class="i letter calligraphic staircase"></div>
-          <div class="n letter calligraphic staircase"></div>
-        </div>
-        <div class="word">
           <div class="p letter calligraphic staircase"></div>
-          <div class="e letter calligraphic staircase"></div>
-          <div class="a letter calligraphic staircase"></div>
-          <div class="c letter calligraphic staircase"></div>
-          <div class="e letter calligraphic staircase"></div>
         </div>
       </div>
       <div class="subheader">
@@ -576,8 +579,13 @@
       </div>
     </div>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAisOwye7xWjmxAR7F1Jp_MMn5Ycxhwnb0&callback=initMap"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+          $('#nav-toggle').click(function(event) {
+            $('#nav').fadeToggle();
+          });
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAisOwye7xWjmxAR7F1Jp_MMn5Ycxhwnb0&callback=initMap"></script>
     <script>
       function initPano() {
         var panoramas = [];

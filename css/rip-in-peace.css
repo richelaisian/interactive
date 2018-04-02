@@ -9,6 +9,47 @@ body {
   padding-bottom: .7em;
 }
 
+nav {
+  font-size: .125em;
+  top: 1em;
+  left: 1em;
+  z-index: 1000;
+  position: fixed;
+}
+
+#nav {
+  display: none;
+  padding: 0;
+  margin: 0;
+  margin-top: .5em;
+  border: solid black;
+  padding-top: .25em;
+  background: honeydew;
+}
+
+.open {
+
+}
+
+#nav-toggle {
+  width: 1em;
+  height: 1em;
+  background: black;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  margin: 0 .25em;
+  margin-bottom: .25em;
+  padding-bottom: .25em;
+  border-bottom: solid black 3px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
 .word:last-child {
   margin-right: 0;
 }
@@ -18,9 +59,7 @@ body {
   font-size: 1.25em;
   margin-bottom: 0;
   justify-content: center;
-  /* border: solid; */
   align-items: center;
-  /* margin: 10px; */
   flex-wrap: wrap;
 }
 
@@ -33,12 +72,21 @@ body {
   font-size: .5em;
 }
 
+.title {
+  align-items: center;
+  height: 100vh;
+  font-size: 2em;
+}
+
+.title>.word {
+    width: 1.06em;
+}
+
 .subheader {
   flex-wrap: wrap;
   font-size: .25em;
-  margin: 0 2.5em;
+  margin: 0 2em;
   padding-bottom: 1em;
-  margin-top: -.5em;
   justify-content: flex-start;
 }
 
@@ -48,12 +96,11 @@ body {
 
 .location {
   position: relative;
-  /* margin: 10px; */
-  /* margin-top: 1em; */
 }
 
 .location-wrapper {
 
+margin: .125em;
 }
 
 .map {
@@ -70,4 +117,4 @@ body {
   height: 100%;
 }
 
-.info {display: flex;justify-content: space-between;position: absolute;top: 0;z-index: 100;mix-blend-mode: overlay;/* filter: invert(100); */right: .25em;pointer-events: none;left: .25em;}
+.info {position: absolute;top: 0;z-index: 100;mix-blend-mode: overlay;display: flex;flex-direction: column;right: .25em;pointer-events: none;justify-content: center;bottom: 0;left: .25em;}
