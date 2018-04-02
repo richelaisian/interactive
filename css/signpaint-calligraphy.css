@@ -20,7 +20,6 @@
   height: .5em;
   display: inline-flex;
   align-items: flex-end;
-  vertical-align: bottom;
   position: relative;
 }
 
@@ -43,41 +42,12 @@
   width: .01em;
 }
 
-
-.i.calligraphic {
-  overflow: visible;
-  height: .5em;
-  display: inline-flex;
-  align-items: flex-end;
-  vertical-align: bottom;
-  width: .025em;
-  position: relative;
-}
-
-.i.calligraphic:after {
-  content: "";
-  left: .0075em;
-  position: absolute;
-  height: .4em;
-  border-left: solid .01em black;
-}
-
-.i.calligraphic:before {
-  content: "";
-  top: 0;
-  width: .025em;
-  height: .05em;
-  background: black;
-  position: absolute;
-}
-
 .j.calligraphic {
   overflow: visible;
   display: inline-flex;
   width: .1em;
   height: .5em;
   align-items: flex-end;
-  vertical-align: bottom;
   position: relative;
 }
 
@@ -111,7 +81,6 @@
   height: .5em;
   display: inline-flex;
   align-items: flex-end;
-  vertical-align: bottom;
   position: relative;
   width: .2em;
 }
@@ -145,7 +114,6 @@
   display: inline-flex;
   width: .01em;
   align-items: flex-end;
-  vertical-align: bottom;
 }
 
 .l.calligraphic:after {
@@ -200,7 +168,6 @@ height: .4em;
   width: .52em;
   display: inline-flex;
   align-items: flex-end;
-  vertical-align: bottom;
   position: relative;
 }
 
@@ -236,7 +203,6 @@ height: .4em;
   width: .27em;
   display: inline-flex;
   align-items: flex-end;
-  vertical-align: bottom;
   position: relative;
 }
 
@@ -278,7 +244,6 @@ height: .4em;
   height: .8em;
   display: inline-flex;
   align-items: flex-end;
-  vertical-align: bottom;
   position: relative;
 }
 
@@ -309,7 +274,6 @@ height: .4em;
   height: .8em;
   display: inline-flex;
   align-items: flex-end;
-  vertical-align: bottom;
   width: .25em;
   position: relative;
 }
@@ -340,7 +304,6 @@ height: .4em;
   height: .8em;
   display: inline-flex;
   align-items: flex-start;
-  vertical-align: bottom;
   width: .256em;
   position: relative;
 }
@@ -381,7 +344,6 @@ height: .4em;
   height: .8em;
   display: inline-flex;
   align-items: flex-end;
-  vertical-align: bottom;
   position: relative;
   width: .27em;
 }
@@ -417,7 +379,6 @@ height: .4em;
   height: .8em;
   display: inline-flex;
   align-items: flex-end;
-  vertical-align: bottom;
   position: relative;
   width: .27em;
 }
@@ -449,7 +410,6 @@ height: .4em;
   height: .8em;
   display: inline-flex;
   align-items: flex-end;
-  vertical-align: bottom;
   position: relative;
   width: .27em;
 }
@@ -487,7 +447,6 @@ height: .4em;
   height: .8em;
   display: inline-flex;
   align-items: flex-end;
-  vertical-align: bottom;
   position: relative;
   width: .27em;
 }
@@ -527,7 +486,6 @@ height: .4em;
   height: .8em;
   display: inline-flex;
   align-items: flex-end;
-  vertical-align: bottom;
   width: .27em;
   position: relative;
 }
@@ -561,7 +519,6 @@ height: .4em;
   height: .8em;
   display: inline-flex;
   align-items: flex-end;
-  vertical-align: bottom;
   position: relative;
   width: .27em;
 }
@@ -591,7 +548,6 @@ height: .4em;
   height: .8em;
   display: inline-flex;
   align-items: flex-end;
-  vertical-align: bottom;
   width: .27em;
   position: relative;
 }

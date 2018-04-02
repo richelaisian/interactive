@@ -1197,6 +1197,101 @@ beige: beige
   vertical-align: bottom;
 }
 
+.comma {
+  display: inline-block;
+  width: .05em;
+  height: .05em;
+  background: black;
+  vertical-align: bottom;
+  position: relative;
+}
+
+.comma:after {
+  content: "";
+  position: absolute;
+  height: .09em;
+  border-right: solid .01em black;
+  bottom: -.06em;
+  right: 0;
+  border-radius: 100%;
+  border-bottom: solid .01em transparent;
+  width: .04em;
+  border-top: .01em solid transparent;
+}
+
+.apostrophe {
+  display: inline-block;
+  width: .05em;
+  height: .05em;
+  background: black;
+  vertical-align: bottom;
+  position: relative;
+  margin-bottom: .5em;
+}
+
+.apostrophe:after {
+  content: "";
+  position: absolute;
+  height: .09em;
+  border-right: solid .01em black;
+  bottom: -.06em;
+  right: 0;
+  border-radius: 100%;
+  border-bottom: solid .01em transparent;
+  width: .04em;
+  border-top: .01em solid transparent;
+}
+
+.semi-colon {
+  display: inline-block;
+  width: .05em;
+  height: .05em;
+  background: black;
+  vertical-align: bottom;
+  position: relative;
+}
+
+.semi-colon:after {
+  content: "";
+  position: absolute;
+  height: .09em;
+  border-right: solid .01em black;
+  bottom: -.06em;
+  right: 0;
+  border-radius: 100%;
+  border-bottom: solid .01em transparent;
+  width: .04em;
+  border-top: .01em solid transparent;
+}
+
+.semi-colon:before {
+  content: "";
+  width: .05em;
+  height: .05em;
+  position: absolute;
+  top: -.3em;
+  background: black;
+}
+
+.colon {
+  display: inline-block;
+  width: .05em;
+  height: .05em;
+  background: black;
+  vertical-align: bottom;
+  position: relative;
+}
+
+
+.colon:before {
+  content: "";
+  width: .05em;
+  height: .05em;
+  position: absolute;
+  top: -.3em;
+  background: black;
+}
+
 .question {
   overflow: visible;
   height: .8em;
