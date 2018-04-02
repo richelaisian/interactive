@@ -590,14 +590,17 @@
 
       // smooth scroll
           $(function(){
-            $('nav a').click(function(){
+            $('#nav a').click(function(){
                 $('html, body').animate({
                     scrollTop: $( $(this).attr('href') ).offset().top
                 }, 500);
                 return false;
-                $(this).addClass('last-clicked');
-                $(this).siblings('a').removeClass('last-clicked');
             });
+          });
+
+          $('#nav a').click(function(event) {
+            $(this).addClass('last-clicked');
+            $(this).siblings('a').removeClass('last-clicked');
           });
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAisOwye7xWjmxAR7F1Jp_MMn5Ycxhwnb0&callback=initMap"></script>
