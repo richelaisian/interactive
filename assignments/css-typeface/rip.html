@@ -599,8 +599,8 @@
           });
 
           $('#nav a').click(function(event) {
+            $('#nav a').removeClass('last-clicked');
             $(this).addClass('last-clicked');
-            $(this).siblings('a').removeClass('last-clicked');
           });
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAisOwye7xWjmxAR7F1Jp_MMn5Ycxhwnb0&callback=initMap"></script>
