@@ -15,12 +15,12 @@ body {
 
 .header {
   display: flex;
-  font-size: 2em;
+  font-size: 1em;
   margin-bottom: 0;
   justify-content: center;
-  border: solid;
+  /* border: solid; */
   align-items: center;
-  margin: 10px;
+  /* margin: 10px; */
   flex-wrap: wrap;
 }
 
@@ -48,10 +48,13 @@ body {
 
 .location {
   position: relative;
-  margin: 1em 10px 10px;
+  /* margin: 10px; */
+  /* margin-top: 1em; */
 }
 
-.location-wrapper {}
+.location-wrapper {
+
+}
 
 .map {
   position: relative;
@@ -67,14 +70,4 @@ body {
   height: 100%;
 }
 
-.info {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 0;
-  z-index: 100;
-  mix-blend-mode: overlay;
-  right: .25em;
-  pointer-events: none;
-  left: .25em;
-}
+.info {display: flex;justify-content: space-between;position: absolute;top: 0;z-index: 100;mix-blend-mode: overlay;/* filter: invert(100); */right: .25em;pointer-events: none;left: .25em;}
