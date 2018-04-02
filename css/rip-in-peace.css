@@ -3,6 +3,16 @@ body {
   font-size: 193px;
 }
 
+a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: inherit;
+  text-decoration: line-through;
+}
+
 .word {
   margin-top: 0;
   margin-right: .5em;
