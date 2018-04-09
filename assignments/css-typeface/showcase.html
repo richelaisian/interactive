@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/showcase.css">
+  </head>
+  <body>
+    <input type="text" id="text-input" placeholder="Write your text here">
+
+    <!-- Use the letters (visible) -->
+
+    <div id="text-destination"></div>
+
+    <!-- Define the letters (invisible) -->
+
+    <div class="letter-definition" data-character=" ">
+        <div class="space"></div>
+    </div>
+
+    <div class="letter-definition" data-character="a">
+        <div class="a letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="b">
+        <div class="b letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="c">
+        <div class="c letter calligraphic"></div>
+    </div>
+
+
+    <div class="letter-definition" data-character="d">
+        <div class="d letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="e">
+        <div class="e letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="f">
+        <div class="f letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="g">
+        <div class="g letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="h">
+        <div class="h letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="i">
+        <div class="i letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="j">
+        <div class="j letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="k">
+        <div class="k letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="l">
+        <div class="l letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="m">
+        <div class="m letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="n">
+        <div class="n letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="o">
+        <div class="o letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="p">
+        <div class="p letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="q">
+        <div class="q letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="r">
+        <div class="r letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="s">
+        <div class="s letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="t">
+        <div class="t letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="u">
+        <div class="u letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="v">
+        <div class="v letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="w">
+        <div class="w letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="x">
+        <div class="x letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="y">
+        <div class="y letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="z">
+        <div class="z letter calligraphic"></div>
+    </div>
+
+    <div class="letter-definition" data-character="1">
+        <div class="one">
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="2">
+        <div class="two">
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="3">
+        <div class="three">
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="4">
+        <div class="four">
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="5">
+        <div class="five">
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="6">
+        <div class="six">
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="7">
+        <div class="seven">
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="8">
+        <div class="eight">
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="9">
+        <div class="nine">
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="0">
+        <div class="zero">
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="!">
+        <div class="exclamation">
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="?">
+        <div class="question">
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character=".">
+        <div class="period">
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="&quot;">
+        <div class="quotes">
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character=",">
+        <div class="comma">
+        </div>
+    </div>
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  // typing script written by laurel schwult
+    $(function() {
+    var $input = $('#text-input');
+    var $destination = $('#text-destination');
+    var space = getHTMLForCharacter(' ');
+
+    function getHTMLForCharacter(character) {
+      var characterDefinition = $('.letter-definition[data-character="' + character + '"]').html();
+      var characterHTML = '<div class="letter" data-character="' + character + '">' + characterDefinition + '</div>';
+
+      if ( characterDefinition != undefined ) {
+        return characterHTML;
+      }
+    }
+
+    function writeText() {
+      var wordArray = [];
+      var words = $input.val().split(' ');
+
+      for (var i = 0; i < words.length; i++) {
+        var word = words[i];
+        var letters = word.split('');
+        var letterElements = letters.map(getHTMLForCharacter);
+        wordArray.push(
+          '<div class="word">' +
+          letterElements.join('') +
+          '</div>'
+        );
+      }
+
+      $destination.html( wordArray.join(space) );
+    }
+
+    $input.on('keyup', function() {
+      writeText();
+    });
+  });
+  </script>
+</html>
