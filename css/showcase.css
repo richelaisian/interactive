@@ -1387,7 +1387,7 @@ hr {
 .dash:before {
   content: "";
   width: .25em;
-  height: .22em;
+  height: .32em;
   border-top: solid .05em black;
 }
 
