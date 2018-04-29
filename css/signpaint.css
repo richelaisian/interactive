@@ -1368,3 +1368,19 @@ beige: beige
   border-top: solid .7em black;
   border-right: solid .025em transparent;
 }
+
+.dash {
+  overflow: visible;
+  height: .5em;
+  display: inline-flex;
+  align-items: flex-end;
+  vertical-align: bottom;
+  position: relative;
+}
+
+.dash:before {
+  content: "";
+  width: .25em;
+  height: .22em;
+  border-top: solid .05em black;
+}

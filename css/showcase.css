@@ -1375,6 +1375,22 @@ hr {
   border-right: solid .025em transparent;
 }
 
+.dash {
+  overflow: visible;
+  height: .5em;
+  display: inline-flex;
+  align-items: flex-end;
+  vertical-align: bottom;
+  position: relative;
+}
+
+.dash:before {
+  content: "";
+  width: .25em;
+  height: .22em;
+  border-top: solid .05em black;
+}
+
 .a.calligraphic:before {
   height: .34em;
   border-bottom-width: .05em;
