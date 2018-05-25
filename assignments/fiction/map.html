@@ -12,10 +12,10 @@
     <div id="big-wrap">
       <header class="title">
         <a href="../fiction.html">Free Edgewood</a>
-        <nav class="landing-nav">
+        <!-- <nav class="landing-nav">
           <a href="history.html">history</a>,
           <a href="map.html">map</a>
-        </nav>
+        </nav> -->
       </header>
 
       <header>
@@ -46,64 +46,77 @@
       <div id="map-legend">
         <div class="table">
 
-          <ul>
+          <ul rel="possum-alley">
             <li>Possum Alley</li>
             <li>path</li>
             <li>1</li>
           </ul>
 
 
-          <ul>
+          <ul rel="forest">
             <li>Extra Small Forest</li>
             <li>park</li>
             <li>2</li>
           </ul>
 
 
-          <ul>
+          <ul rel="netower">
             <li>Northeast Tower</li>
             <li>building</li>
             <li>3</li>
           </ul>
 
 
-          <ul>
+          <ul rel="center-lot">
             <li>Center Lot</li>
             <li>industrial park</li>
             <li>4</li>
           </ul>
 
-          <ul>
+          <ul rel="museum">
             <li>Museum of Community Art</li>
             <li>arts venue</li>
             <li>5</li>
           </ul>
 
-          <ul>
+          <ul rel="store">
             <li>General Store</li>
             <li>store</li>
             <li>6</li>
           </ul>
 
-          <ul>
+          <ul rel="ballroom">
             <li>Red Maple Ballroom</li>
             <li>arts venue</li>
             <li>7</li>
           </ul>
 
-          <ul>
-            <li>Aly's Dinner</li>
+          <ul rel="diner">
+            <li>Aly's Diner</li>
             <li>restaurant</li>
             <li>8</li>
           </ul>
 
-          <ul>
+          <ul rel="ccenter">
             <li>Edgewood Center</li>
             <li>comunity center</li>
             <li>9</li>
           </ul>
         </div>
       </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+        $('.table ul').on('mouseenter', function(){
+         var target = $(this).attr('rel');
+         $("#"+target).addClass('highlight');
+        });
+
+        $('.table ul').on('mouseleave', function(){
+         var target = $(this).attr('rel');
+         $("#"+target).removeClass('highlight');
+        });
+      </script>
   </body>
 
 </html>

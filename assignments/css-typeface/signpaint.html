@@ -230,42 +230,49 @@
       </div>
       <div class="sample" id="switch-sample">
         <div class="word">
-          <div class="c letter"></div>
-          <div class="l letter"></div>
-          <div class="i letter"></div>
-          <div class="c letter"></div>
-          <div class="k letter"></div>
+          <div class="c letter off"></div>
+          <div class="l letter off"></div>
+          <div class="i letter off"></div>
+          <div class="c letter off"></div>
+          <div class="k letter off"></div>
         </div>
         <div class="word">
-          <div class="h letter"></div>
-          <div class="e letter"></div>
-          <div class="r letter"></div>
-          <div class="e letter"></div>
+          <div class="h letter off"></div>
+          <div class="e letter off"></div>
+          <div class="r letter off"></div>
+          <div class="e letter off"></div>
         </div>
         <div class="word">
-          <div class="t letter"></div>
-          <div class="o letter"></div>
+          <div class="t letter off"></div>
+          <div class="o letter off"></div>
         </div>
         <div class="word">
-          <div class="c letter"></div>
-          <div class="h letter"></div>
-          <div class="a letter"></div>
-          <div class="n letter"></div>
-          <div class="g letter"></div>
-          <div class="e letter"></div>
+          <div class="c letter off"></div>
+          <div class="h letter off"></div>
+          <div class="a letter off"></div>
+          <div class="n letter off"></div>
+          <div class="g letter off"></div>
+          <div class="e letter off"></div>
         </div>
         <div class="word">
-          <div class="t letter"></div>
-          <div class="y letter"></div>
-          <div class="p letter"></div>
-          <div class="e letter"></div>
+          <div class="t letter off"></div>
+          <div class="y letter off"></div>
+          <div class="p letter off"></div>
+          <div class="e letter off"></div>
         </div>
       </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-      $('#switch-sample').click(function(event) {
-        $('#switch-sample .letter').toggleClass('calligraphic');
+      var classNames = ['staircase','italic-condensed','off'];
+      $('#switch-sample').click(function () {
+          if($('#switch-sample .letter').is('.staircase')) {
+              $('#switch-sample .letter').toggleClass("staircase italic-condensed");
+          } else if($('#switch-sample .letter').is('.italic-condensed')) {
+              $('#switch-sample .letter').toggleClass("italic-condensed off");
+          } else if($('#switch-sample .letter').is('.off')) {
+              $('#switch-sample .letter').toggleClass("off staircase");
+          }
       });
     </script>
   </body>
