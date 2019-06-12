@@ -87,6 +87,7 @@ li:last-child {
   align-items: center;
   height: 100vh;
   font-size: 2em;
+  width: 100%;
 }
 
 .title > .word {
@@ -96,7 +97,9 @@ li:last-child {
 .subheader {
   flex-wrap: wrap;
   font-size: .5em;
-  margin: 0 2em;
+  padding: 0 .5em;
+  margin: 0 auto;
+  max-width: 15em;
   padding-bottom: 1em;
   justify-content: flex-start;
 }
@@ -139,4 +142,11 @@ li:last-child {
   justify-content: center;
   bottom: 0;
   left: .25em;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .subheader {
+    display: none;
+  }
 }
