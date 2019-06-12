@@ -262,6 +262,16 @@
         </div>
       </div>
     </section>
+
+    <section id="text-transform" class="hi">
+        <div class="l1 h letter calligraphic off"></div>
+        <div class="l2 e letter calligraphic off"></div>
+        <div class="l3 y letter calligraphic off"></div>
+        <div class="l4 space letter calligraphic off"></div>
+        <div class="l5 b letter calligraphic off"></div>
+        <div class="l6 u letter calligraphic off"></div>
+        <div class="l7 d letter calligraphic off"></div>
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       var classNames = ['staircase','italic-condensed','off'];
@@ -273,6 +283,58 @@
           } else if($('#switch-sample .letter').is('.off')) {
               $('#switch-sample .letter').toggleClass("off staircase");
           }
+      });
+
+      $('#text-transform').click(function () {
+        if ($(this).hasClass('hi')) {
+          $(this).removeClass('hi');
+
+          // h to b
+          $('.l1').removeClass('h');
+          $('.l1').addClass('b');
+
+          // i to y
+          $('.l2').removeClass('e');
+          $('.l2').addClass('y');
+
+          // i to y
+          $('.l3').removeClass('y');
+          $('.l3').addClass('e');
+
+          // i to y
+          $('.l5').removeClass('b');
+          $('.l5').addClass('n');
+
+          // i to y
+          $('.l6').removeClass('u');
+          $('.l6').addClass('o');
+
+          // i to y
+          $('.l7').removeClass('d');
+          $('.l7').addClass('w');
+        } else {
+          $('.l1').addClass('h');
+          $('.l1').removeClass('b');
+
+          $('.l2').addClass('e');
+          $('.l2').removeClass('y');
+
+          $('.l3').addClass('y');
+          $('.l3').removeClass('e');
+
+          $('.l5').addClass('b');
+          $('.l5').removeClass('n');
+
+          $('.l6').addClass('u');
+          $('.l6').removeClass('o');
+
+          $('.l7').addClass('d');
+          $('.l7').removeClass('w');
+
+          $(this).addClass('hi');
+        }
+
+
       });
     </script>
   </body>
